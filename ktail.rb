@@ -3,7 +3,7 @@ require 'formula'
 class Ktail < Formula
   homepage 'https://github.com/atombender/ktail'
   url 'https://github.com/atombender/ktail.git',
-    :tag => 'v0.4.0'
+    :tag => 'v0.5.0'
 
   depends_on "go" => :build
   depends_on "glide" => :build
