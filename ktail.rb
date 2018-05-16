@@ -6,7 +6,7 @@ class Ktail < Formula
     :tag => 'v0.6.0'
 
   depends_on "go" => :build
-  depends_on "glide" => :build
+  depends_on "dep" => :build
 
   def install
     ENV["GOPATH"] = buildpath
@@ -14,7 +14,7 @@ class Ktail < Formula
     dir.install buildpath.children
 
     cd dir do
-      system "glide install -v"
+      system "dep ensure -vendor-only"
       system "make"
       bin.install "build/ktail"
     end
