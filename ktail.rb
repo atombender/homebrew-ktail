@@ -3,10 +3,9 @@ require 'formula'
 class Ktail < Formula
   homepage 'https://github.com/atombender/ktail'
   url 'https://github.com/atombender/ktail.git',
-    :tag => 'v0.10.0'
+    :tag => 'v0.11.0'
 
   depends_on "go" => :build
-  depends_on "glide" => :build
 
   def install
     ENV["GOPATH"] = buildpath
