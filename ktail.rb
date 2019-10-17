@@ -1,7 +1,9 @@
 require 'formula'
 
 class Ktail < Formula
+  desc "A tool to tail Kubernetes pod logs"
   homepage 'https://github.com/atombender/ktail'
+  head 'https://github.com/atombender/ktail.git'
   url 'https://github.com/atombender/ktail.git',
     :tag => 'v0.11.0'
 
