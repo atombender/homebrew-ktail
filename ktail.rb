@@ -13,7 +13,6 @@ class Ktail < Formula
     dir.install buildpath.children
 
     cd dir do
-      system "glide install --strip-vendor"
       system "make"
       bin.install "build/ktail"
     end
