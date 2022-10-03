@@ -5,7 +5,7 @@ class Ktail < Formula
   homepage 'https://github.com/atombender/ktail'
   head 'https://github.com/atombender/ktail.git'
   url 'https://github.com/atombender/ktail.git',
-    :tag => 'v1.3.0'
+    :tag => 'v1.3.1'
 
   depends_on "go" => :build
 
